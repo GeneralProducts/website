@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Electrolize|Titillium+Web:400,400i,600,600i');
+@import url('https://fonts.googleapis.com/css?family=Nova+Mono');
+
+html,
+body,
+.page {
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  background-color: black;
+}
+
+h1, h2 {
+  font-family: 'Nova Mono', monospace;
+  color: #f3095c;
+}
+
+p {
+  font-family: 'Nova Mono', monospace;
+  color: white;
+  margin-bottom: 1em;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-wrapper {
+  flex: 0 0 auto;
+}
+
+.main-wrapper {
+  flex: 1;
+  z-index: 1;
+  overflow-y: auto;
+}
+
+.footer-wrapper {
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+#home.wrapper {
+  display: flex;
+  align-items: center;
+  min-height: 24em;
+  justify-content: center;
+}
+
+#home .container {
+  flex: none;
+  max-width: 50%;
+  text-align: center;
+}
+
+svg {
+  width: 600px;
+}
+
+@keyframes hideshow {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.a {
+  fill: #ffffff;
+  animation: hideshow 4s ease ;
+}
+.b,
+.c {
+  fill:none;
+  stroke:#ffffff;
+  stroke-width:27px;
+  animation: hideshow 4s ease ;
+}
+.b {
+  stroke-linejoin: round;
+  animation: hideshow 4s ease ;
+}
+.c {
+  stroke-miterlimit: 10;
+  animation: hideshow 4s ease ;
+}
+
+.glitch {
+  color: white;
+  position:relative;
+  width:600px;
+  margin:0 auto;
+}
+
+@keyframes noise-anim{
+  $steps:20;
+  @for $i from 0 through $steps{
+    #{percentage($i*(1/$steps))}{
+      clip:rect(random(100)+px,9999px,random(100)+px,0);
+    }
+  }
+}
+
+.glitch:after{
+  content: url("/blue-logo.svg");
+  width:600px;
+  position:absolute;
+  left:2px;
+  top:0;
+  color:white;
+  background:none;
+  overflow:hidden;
+  clip: rect(0,900px,0,0);
+  animation:noise-anim 2s  linear alternate-reverse;
+}
+
+@keyframes noise-anim-2{
+  $steps:20;
+  @for $i from 0 through $steps{
+    #{percentage($i*(1/$steps))}{
+      clip: rect(random(100)+px,9999px,random(100)+px,0);
+    }
+  }
+}
+
+.glitch:before{
+  content: url("/blue-logo.svg");
+  position:absolute;
+  left: -2px;
+  top: 0;
+  color: white;
+  background: none;
+  overflow: hidden;
+  clip: rect(0,900px,0,0);
+  animation: noise-anim-2 3s linear alternate-reverse;
+}
+
+.main {
+  padding: 20px 0;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.header-inner, .footer-inner {
+  padding: 5px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+ul.nav {
+  display: inline-flex;
+  margin: 25px 20px;
+}
+
+ul.nav li {
+  padding-right: 20px;
+  list-style-type: none;
+}
+
+a {
+  color: white;
+  cursor: pointer;
+  transition: color 250ms ease-out;
+  text-shadow: 0 0 4px rgba(172,249,251,0.65);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f1b2b2;
+}
+
+html {
+  font-size: 17px;
+}
+
+.cost {
+  font-size: 40px;
+  margin-bottom: -10px !important;
+}
+
+small {
+  font-weight: lighter;
+  color: gray;
+  margin: 0;
+}
+
+.flex {
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  width: 19rem;
+  margin: 0 auto;
+}
+
+.input-range__label--max {
+  display: none;
+}
+
+.input-range__label--min {
+  display: none;
+}
+
+.input-range__label-container {
+  left: -50%;
+  position: relative;
+  display: none;
+}
