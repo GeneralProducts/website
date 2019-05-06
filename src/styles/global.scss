@@ -4,24 +4,41 @@
 html,
 body,
 .page {
+  font-size: 17px;
   height: 100%;
 }
 
 body {
-  overflow: hidden;
   background-color: black;
+  overflow: hidden;
 }
 
+// Typography
+
 h1, h2 {
-  font-family: 'Nova Mono', monospace;
   color: #f3095c;
+  font-family: 'Nova Mono', monospace;
 }
 
 p {
-  font-family: 'Nova Mono', monospace;
   color: white;
+  font-family: 'Nova Mono', monospace;
   margin-bottom: 1em;
 }
+
+a {
+  color: white;
+  cursor: pointer;
+  transition: color 250ms ease-out;
+  text-shadow: 0 0 4px rgba(172,249,251,0.65);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f1b2b2;
+}
+
+// Layout
 
 .page {
   display: flex;
@@ -43,6 +60,20 @@ p {
   text-align: center;
 }
 
+.main {
+  padding: 20px 0;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.header-inner, .footer-inner {
+  padding: 5px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+// Homepage layout
+
 #home.wrapper {
   display: flex;
   align-items: center;
@@ -56,9 +87,17 @@ p {
   text-align: center;
 }
 
+// Logo
+
+.logo {
+  width: 400px;
+}
+
 svg {
   width: 600px;
 }
+
+// Glitch effect on homepage logo
 
 @keyframes hideshow {
   0% { opacity: 0; }
@@ -72,8 +111,8 @@ svg {
 .b,
 .c {
   fill:none;
-  stroke:#ffffff;
-  stroke-width:27px;
+  stroke: #ffffff;
+  stroke-width: 27px;
   animation: hideshow 4s ease ;
 }
 .b {
@@ -87,31 +126,31 @@ svg {
 
 .glitch {
   color: white;
-  position:relative;
-  width:600px;
-  margin:0 auto;
+  position: relative;
+  width: 600px;
+  margin: 0 auto;
 }
 
 @keyframes noise-anim{
-  $steps:20;
+  $steps: 20;
   @for $i from 0 through $steps{
     #{percentage($i*(1/$steps))}{
-      clip:rect(random(100)+px,9999px,random(100)+px,0);
+      clip: rect(random(100)+px,9999px,random(100)+px,0);
     }
   }
 }
 
 .glitch:after{
-  content: url("/blue-logo.svg");
-  width:600px;
-  position:absolute;
-  left:2px;
-  top:0;
-  color:white;
-  background:none;
-  overflow:hidden;
+  content: url("/alt-logo.svg");
+  width: 600px;
+  position: absolute;
+  left: 2px;
+  top: 0;
+  color: white;
+  background: none;
+  overflow: hidden;
   clip: rect(0,900px,0,0);
-  animation:noise-anim 2s  linear alternate-reverse;
+  animation: noise-anim 2s  linear alternate-reverse;
 }
 
 @keyframes noise-anim-2{
@@ -124,8 +163,8 @@ svg {
 }
 
 .glitch:before{
-  content: url("/blue-logo.svg");
-  position:absolute;
+  content: url("/alt-logo.svg");
+  position: absolute;
   left: -2px;
   top: 0;
   color: white;
@@ -135,17 +174,7 @@ svg {
   animation: noise-anim-2 3s linear alternate-reverse;
 }
 
-.main {
-  padding: 20px 0;
-  margin: 0 auto;
-  max-width: 800px;
-}
-
-.header-inner, .footer-inner {
-  padding: 5px;
-  margin: 0 auto;
-  max-width: 800px;
-}
+// Nav
 
 ul.nav {
   display: inline-flex;
@@ -157,21 +186,7 @@ ul.nav li {
   list-style-type: none;
 }
 
-a {
-  color: white;
-  cursor: pointer;
-  transition: color 250ms ease-out;
-  text-shadow: 0 0 4px rgba(172,249,251,0.65);
-  text-decoration: none;
-}
-
-a:hover {
-  color: #f1b2b2;
-}
-
-html {
-  font-size: 17px;
-}
+// Calculator
 
 .cost {
   font-size: 40px;

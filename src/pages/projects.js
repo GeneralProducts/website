@@ -1,8 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
-import Calculator from "../components/Calculator"
 
-import { ThemeProvider, createTheme, withStyles, Arwes, Project, Paragraph, Heading, Button, Header, Footer } from 'arwes';
+import { ThemeProvider, createTheme, withStyles, Arwes, Project, Paragraph, Words, Header, Footer } from 'arwes';
 
 const genproTheme = {
   color: {
@@ -39,12 +38,11 @@ export default () => (
             <Header animate>
               <div className="header-inner">
                 <Link to="/">
-                  <img src='/logo.svg'/>
+                  <img src='/logo.svg' alt='logo' className='logo'/>
                 </Link>
                 <ul className="nav">
-                <li><Link to="/pricing/">Pricing</Link></li>
                 <li><Link to="/projects/">Projects</Link></li>
-                <li><Link to="https://consonance.app">Consonance</Link></li>
+                <li><a href="https://consonance.app">Consonance</a></li>
                 </ul>
               </div>
             </Header>
@@ -52,10 +50,12 @@ export default () => (
         </div>
         <div className="main-wrapper">
           <div className="main">
-            <Button animate>ONIX Ninja</Button>
-            <Button animate>Publishers Who Code</Button>
-            <Button animate>Internships</Button>
-            <Button animate>Side Project Summer</Button>
+          <h3><Words animate>Projects</Words></h3>
+          <p>
+            <Words animate>
+              Information to follow. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, amet.
+            </Words>
+          </p>
 
           </div>
         </div>

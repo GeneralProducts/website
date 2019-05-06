@@ -1,8 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
-import Calculator from "../components/Calculator"
 
-import { ThemeProvider, createTheme, Arwes, Project, Paragraph, Heading, Button, Header, Footer } from 'arwes';
+import { ThemeProvider, createTheme, withStyles, Arwes, Project, Paragraph, Words, Header, Footer } from 'arwes';
 
 const genproTheme = {
   color: {
@@ -30,7 +29,6 @@ const styles = theme => ({
   }
 });
 
-
 export default () => (
   <ThemeProvider theme={createTheme(genproTheme)}>
     <Arwes animate background='/background.jpg' pattern='/glow.png'>
@@ -40,11 +38,11 @@ export default () => (
             <Header animate>
               <div className="header-inner">
                 <Link to="/">
-                  <img src='/logo.svg' className='logo'/>
+                  <img src='/logo.svg' alt='logo' className='logo'/>
                 </Link>
                 <ul className="nav">
                 <li><Link to="/projects/">Projects</Link></li>
-                <li><Link to="https://consonance.app">Consonance</Link></li>
+                <li><a href="https://consonance.app">Consonance</a></li>
                 </ul>
               </div>
             </Header>
@@ -52,13 +50,14 @@ export default () => (
         </div>
         <div className="main-wrapper">
           <div className="main">
-          <Project
-              animate
-              header='How much does it cost'
-          >
-          <Calculator />
-          </Project>
-            </div>
+          <h3><Words animate>Initiatives</Words></h3>
+          <p>
+            <Words animate>
+              Information to follow. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, amet.
+            </Words>
+          </p>
+
+          </div>
         </div>
         <div className="footer-wrapper">
           <div className="footer">

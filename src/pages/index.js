@@ -1,5 +1,6 @@
 import React from "react"
-import { ThemeProvider, createTheme, Arwes, Words, Button, Footer, SoundsProvider, createSounds } from 'arwes'
+import { ThemeProvider, createTheme, Arwes, Words, Button, Footer, Code, SoundsProvider, createSounds } from 'arwes'
+import { Link } from "gatsby"
 
 const genproTheme = {
   color: {
@@ -69,14 +70,29 @@ export default () => (
                     Manufacturers of fine hypertext pages
                   </Words>
                 </h2>
-                <Button layer="primary" animate>Initiatives</Button>
+                <Button layer="primary" animate>
+                  <Link to="/initiatives/">Initiatives</Link>
+                </Button>                { " " }
+                <Button layer="primary" animate>
+                  <Link to="/consonance/">Consonance publishing management software</Link>
+                </Button>
                 { " " }
-                <Button layer="primary" animate>Consonance publishing management software</Button>
-                { " " }
-                <Button layer="primary" animate>Side projects</Button>
+                <Button layer="primary" animate>
+                  <Link to="/projects/">Projects</Link>
+                </Button>
               </div>
             </div>
           </div>
+          <p>
+          <Code animate type='pre' language='Javascript'>{
+            `
+            def status?
+              return "This is a side-project work in progress" if Time.zone.now < Date.parse("2019-12-25")
+
+              "Welcome to our amazing and completely finished corporate website!"
+            end
+            `}</Code>
+          </p>
           <div className="footer-wrapper">
             <div className="footer">
               <Footer animate>
