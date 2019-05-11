@@ -6,6 +6,9 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: 'gatsby-plugin-jss'
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `components`,
