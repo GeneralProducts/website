@@ -11,7 +11,7 @@ export default () => (
       <div id="home" className="wrapper">
         <div className="container">
           <div className="glitch">
-            <svg xmlns="http://www.w3.org/2000/svg" width="600" height="188">)
+            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 575.628 144">)
               <title>General Products Ltd</title>
               <rect className="a" x="71.943" y="117" width="27.057" height="27"/>
               <rect className="a" x="72" width="54" height="27"/>

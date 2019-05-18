@@ -24,9 +24,10 @@ h2 {
 }
 
 p {
-  font-family: 'Nova Mono', monospace;
-  color: white;
+  font-family: "Electrolize", "sans-serif";
+  color: #cfd2d3;
   margin-bottom: 1em;
+  padding-bottom: 1em;
 }
 
 .page {
@@ -61,13 +62,25 @@ p {
   text-align: center;
 }
 
+#initiatives.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 250px;
+}
+
 svg {
-  transform: scale(0.55)
+  overflow: overlay;
 }
 
 .logo {
-  width: 75px;
-  filter: hue-rotate(50deg);
+  width: 100px !important;
+  filter: drop-shadow(0px 0px 20px #e8b0aa);
+}
+
+.overlay {
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
 }
 
 @keyframes hideshow {
@@ -104,7 +117,6 @@ svg {
 .glitch {
   color: white;
   position:relative;
-  width:600px;
   margin:0 auto;
 }
 
@@ -119,10 +131,10 @@ svg {
 
 .glitch:after{
   content: url("/alt-logo.svg");
-  transform: scale(0.55);
   position:absolute;
   left:2px;
   top:0;
+  width: 100%;
   background:none;
   overflow:hidden;
   clip: rect(0,900px,0,0);
@@ -140,15 +152,16 @@ svg {
 
 .glitch:before{
   content: url("/alt-logo.svg");
-  transform: scale(0.55);
   position:absolute;
   left: -2px;
   top: 0;
+  width: 100%;
   background: none;
   overflow: hidden;
   clip: rect(0,900px,0,0);
   animation: noise-anim-2 3s linear alternate-reverse;
 }
+
 
 .main {
   padding: 20px 0;
@@ -173,7 +186,7 @@ ul.nav li {
 }
 
 a {
-  color: white;
+  color: #f2eff0;
   cursor: pointer;
   transition: color 250ms ease-out;
   text-shadow: 0 0 4px rgba(172,249,251,0.65);
@@ -181,7 +194,19 @@ a {
 }
 
 a:hover {
-  color: #f1b2b2;
+  color: #ffffff;
+}
+
+.success {
+  color: #f2f3f4 !important;
+}
+
+.success:hover {
+  color: #ffffff !important;
+}
+
+.color-overlay {
+  background-color: lighten(red, 20%);
 }
 
 html {

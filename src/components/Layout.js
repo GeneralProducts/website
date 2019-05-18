@@ -38,6 +38,7 @@ export default ({ children }) => (
     <SoundsProvider sounds={createSounds(mySounds)}>
       <Arwes animate background='/background.jpg' pattern='/glow.png'>
         <div className="page">
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"/>
           {children}
           <div className="footer-wrapper">
             <div className="footer">
