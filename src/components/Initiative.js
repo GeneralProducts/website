@@ -11,7 +11,7 @@ const Initiative = (props) => (
       <Row>
         <Col s={12}>
           <Row nested noMargin>
-            <Col s={4}>
+            <Col s={12} l={4}>
               <Image animate resources={props.image_url}>
                 {props.caption}
               </Image>
@@ -23,7 +23,7 @@ const Initiative = (props) => (
                 />
               }
             </Col>
-            <Col s={8}>
+            <Col s={12} l={8}>
               <p>
                 <Words animate>
                   { props.body }
