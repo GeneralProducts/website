@@ -1,5 +1,6 @@
 const initiatives = [
   {
+    key: 1,
     title: 'Side project summer',
     body:  "Carve out time for coding! To get momentum on publishers' increasing enthusiasm for code, every Friday afternoon we all convene on Twitter to compare notes on our side projects. It's fantastic to see all the things people are doing with their growing technical literacy.",
     image_url: '/sps.png',
@@ -18,6 +19,7 @@ const initiatives = [
     ]
   },
   {
+    key: 2,
     title: 'Publishers who code',
     body: 'We run occasional coding sessions and courses for organisations such as Book Machine, eLife Sciences, the London Book Fair, SYP, and universities. Often we make these free to attend. We announce such courses on Twitter. Contact us if you\'d like us to quote for a private coding course for your organisation.',
     image_url: '/faber.jpg',
@@ -34,7 +36,8 @@ const initiatives = [
     ]
   },
   {
-    title: 'Publishers\' advice bot',
+    key: 3,
+    title: "Publishers' advice bot",
     body: 'A cheerful and informative advice bot for book publishers. Say “help” to me, and I\'ll give you some invaluable publishing advice!',
     image_url: '/bot.png',
     caption: "Beep!",
@@ -46,9 +49,23 @@ const initiatives = [
     ]
   },
   {
+    key: 4,
+    title: 'ONIX Ninja',
+    body: 'ONIX augmentation for clients who are unable to move to Consonance but who need to augment the ONIX produced by their legacy systems, for ingestion into Coresource, or similar demanding third parties.',
+    image_url: '/onix_ninja.jpeg',
+    caption: "Add complex price rules etc",
+    social: [
+      {
+      url: 'https://twitter.com/onix_ninja',
+      className: 'fa-twitter',
+      }
+    ]
+  },
+  {
+    key: 5,
     title: 'Volunteering',
-    body: 'We are proud to be long-time volunteers at RailsGirls London and encourage many publishers that we meet to apply, try Ruby and Rails, and become part of the super-friendly community. We\'ve also volunteered at a number of other tech events for publishers and kids.',
-    image_url: '/railsgirls.jpg',
+    body: 'We are proud to be long-time coaches and speakers at RailsGirls London and encourage many publishers that we meet to apply, try Ruby and Rails, and become part of the super-friendly community. We\'ve also volunteered at a number of other tech events for publishers and kids.',
+    image_url: '/railsgirls.png',
     caption: "Railsgirls London",
     social: [
       {
@@ -58,6 +75,7 @@ const initiatives = [
     ]
   },
   {
+    key: 6,
     title: 'Supporting open source',
     body: 'We donate to some of the open source code we rely on, such as Rubocop, via OpenCollective.',
     image_url: '/rubocop.png',
@@ -72,18 +90,43 @@ const initiatives = [
     ]
   },
   {
-    title: 'Talks, writing & events',
-    body: 'We have a busy diary of events throughout the year. Recent events include a coding seminar at the London Book Fair, BookMachine Unplugged, Byte the Book, Coding at the Castle for the Oxford SYP, the Pitch competition, and more.',
-    image_url: '/castle.png',
-    caption: "SYP\'s coding at the castle",
+    key: 7,
+    title: 'Campaigns',
+    body: "Whether it's supporting paid internships, attending an anti-Trump demonstration, or pushing for corporates to support technical literacy in publishing, we are proud of our actions to make the world a bit better.",
+    image_url: '/trump.png',
+    caption: "Hate never welcome",
     link_href: "https://www.consonance.app/blog/",
-    link_text: "Read about past and future events on our blog",
+    link_text: "Read opinions on our blog",
     social: [
       {
-      url: 'https://twitter.com/consonance_app',
-      className: 'fa-twitter',
+        url: 'https://twitter.com/consonance_app',
+        className: 'fa-twitter',
       }
     ]
+  },
+  {
+    key: 8,
+    title: 'Talks, writing & hosting events',
+    body: 'We have a busy diary of events we run or contribute to throughout the year. Recent events include a coding seminar at the London Book Fair, BookMachine Unplugged, Byte the Book, Coding at the Castle for the Oxford SYP, the Pitch competition, and more.',
+    image_url: '/castle.png',
+    caption: "SYP's coding at the castle",
+    link_href: "https://www.consonance.app/blog/",
+    link_text: "Read about our past and future events on our blog",
+    social: [
+      {
+        url: 'https://twitter.com/consonance_app',
+        className: 'fa-twitter',
+      }
+    ]
+  },
+  {
+    key: 9,
+    title: 'Conference attendance',
+    body: 'We enjoy refining our skills by attending the best conferences about things we care about. For instance, we are annual attendees of Brighton Ruby and Bath Ruby.',
+    image_url: '/brighton.png',
+    caption: "Andy Croll's Brighton Ruby",
+    link_href: "https://www.consonance.app/blog/bath-ruby-2018/",
+    link_text: "Read our write up of Bath Ruby 2018"
   },
 ]
 

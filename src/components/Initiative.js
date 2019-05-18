@@ -15,29 +15,31 @@ const Initiative = (props) => (
               <Image animate resources={props.image_url}>
                 {props.caption}
               </Image>
-              <SocialMediaIcons
-                icons={props.social}
-                iconSize={'1.3em'}
-                iconColor={'#ffffff'}
-              />
+              { props.social &&
+                <SocialMediaIcons
+                  icons={props.social}
+                  iconSize={'1.3em'}
+                  iconColor={'#ffffff'}
+                />
+              }
             </Col>
             <Col s={8}>
               <p>
-                <Words animate show="true">
+                <Words animate>
                   { props.body }
                 </Words>
               </p>
-              { props.link_text &&
+              {props.link_text &&
                 <Line animate />
               }
-              <p>
+              {props.link_text &&
                 <Link
                   className='success'
                   href={props.link_href}
                 >
                   {props.link_text}
                 </Link>
-              </p>
+              }
             </Col>
           </Row>
         </Col>

@@ -2,6 +2,7 @@ import React from "react"
 import Calculator from "../components/Calculator"
 import Layout from "../components/Layout"
 import Nav from "../components/Nav"
+import "../styles/calculator.scss"
 
 import { Project } from 'arwes';
 

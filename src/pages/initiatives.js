@@ -3,6 +3,7 @@ import Layout from "../components/Layout"
 import Nav from "../components/Nav"
 import Initiative from "../components/Initiative"
 import initiatives from "../data/initiatives"
+import "../styles/initiatives.scss"
 
 const initiativesArray = initiatives.map((initiative) => {
   return (
@@ -14,6 +15,7 @@ const initiativesArray = initiatives.map((initiative) => {
       image_url={initiative.image_url}
       caption={initiative.caption}
       social={initiative.social}
+      key={initiative.key}
     />
   )
 })
@@ -23,7 +25,7 @@ export default () => (
     <Nav />
     <div className="main-wrapper">
       <div id="initiatives" className="wrapper">
-        <div className="container">
+        <div>
           { initiativesArray }
         </div>
       </div>

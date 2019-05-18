@@ -1,9 +1,9 @@
 import React from "react"
 import { Words, Button, Paragraph } from 'arwes'
-
 import Layout from "../components/Layout"
-
 import { Link } from "gatsby"
+import "../styles/home.scss"
+
 
 export default () => (
   <Layout>
@@ -34,7 +34,7 @@ export default () => (
             </svg>
           </div>
           <h1>
-            <Words animate show>
+            <Words animate>
               General Products Ltd
             </Words>
           </h1>
@@ -55,11 +55,14 @@ export default () => (
           <Button layer="primary" animate>
             <Link to="/projects/">Side projects</Link>
           </Button>
-          <p>
-            <Paragraph animate>
-              - Under construction  <a href="https://github.com/GeneralProducts/website">Code</a> -
-            </Paragraph>
-          </p>
+          <Paragraph/>
+          <Paragraph>
+            [ Under construction ]
+            <br/>
+            <a href="https://github.com/GeneralProducts/website">Code</a>
+
+          </Paragraph>
+
         </div>
       </div>
     </div>
