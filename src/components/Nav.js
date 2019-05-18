@@ -15,7 +15,7 @@ export default () => (
           <ul className="nav">
             <li><Link to="/initiatives/">Initiatives</Link></li>
             <li><Link to="/software/">Software</Link></li>
-            <li><Link to="/projects/">Side projects</Link></li>
+            <li><Link to="/side_projects/">Side projects</Link></li>
           </ul>
         </div>
       </Header>

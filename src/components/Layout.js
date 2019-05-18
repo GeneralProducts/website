@@ -32,7 +32,6 @@ const mySounds = {
   }
 }
 export default ({ children }) => (
-
   <ThemeProvider theme={createTheme(genproTheme)}>
     <SoundsProvider sounds={createSounds(mySounds)}>
       <Arwes animate background='/background.jpg' pattern='/glow.png'>
@@ -47,7 +46,11 @@ export default ({ children }) => (
                     |
                     <a href="https://consonance.app"> Consonance website </a>
                     |
+                    <a href="https://www.consonance.app/about/"> About the team </a>
+                    |
                     <a href="mailto:info@consonance.app"> Contact </a>
+                    |
+                    <a href="https://github.com/GeneralProducts/website"> Github</a>
                   </div>
               </Footer>
             </div>

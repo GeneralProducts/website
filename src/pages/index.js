@@ -4,7 +4,6 @@ import Layout from "../components/Layout"
 import { Link } from "gatsby"
 import "../styles/home.scss"
 
-
 export default () => (
   <Layout>
     <div className="main-wrapper">
@@ -53,15 +52,10 @@ export default () => (
           </Button>
           { " " }
           <Button layer="primary" animate>
-            <Link to="/projects/">Side projects</Link>
+            <Link to="/side_projects/">Side projects</Link>
           </Button>
           <Paragraph/>
-          <Paragraph>
-            [ Under construction ]
-            <br/>
-            <a href="https://github.com/GeneralProducts/website">Code</a>
 
-          </Paragraph>
 
         </div>
       </div>

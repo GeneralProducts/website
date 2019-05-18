@@ -128,6 +128,24 @@ const initiatives = [
     link_href: "https://www.consonance.app/blog/bath-ruby-2018/",
     link_text: "Read our write up of Bath Ruby 2018"
   },
+  {
+    key: 10,
+    title: 'Component library',
+    body: "This is a public collection of the building blocks that we use as we continue to improve Consonance. Just as Consonance gives its users “one source of truth” for their data, our component library provides us with “one source of truth” for some of the most key components in our code.",
+    image_url: '/library.png',
+    caption: "Our component library",
+    link_href: "https://web.consonance.app/component_library",
+    link_text: "See our component library"
+  },
+  {
+    key: 11,
+    title: 'Triangles',
+    body: "We needed triangles for our new brand materials. And so we wrote a triangles generator. This is a little piece of object-oriented code to generate lots of triangles.",
+    image_url: '/triangles.png',
+    caption: "Triangles",
+    link_href: "https://github.com/GeneralProducts/triangles",
+    link_text: "See the code"
+  },
 ]
 
 export default initiatives
