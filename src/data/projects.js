@@ -9,7 +9,7 @@ const projects = [
     thumb_image_url: '/pp2.png',
     caption: "paintpad.app",
     link_href: "https://paintpad.app",
-    link_text: "Visit the Paint Pad website",
+    link_text: "Paint Pad website",
     social: [
       {
       url: 'https://twitter.com/paintpadapp',
@@ -18,7 +18,7 @@ const projects = [
       {
       url: 'https://twitter.com/reactjs',
       className: 'fa-react',
-    }
+      }
     ]
   },
   {
@@ -31,7 +31,7 @@ const projects = [
     thumb_image_url: '/bpp2.png',
     caption: "BookPenPals.com",
     link_href: "https://bookpenpals.com",
-    link_text: "Visit the Book Pen Pals website",
+    link_text: "Book Pen Pals website",
     social: [
       {
       url: 'https://twitter.com/bookpenpals',
@@ -53,7 +53,7 @@ const projects = [
     thumb_image_url: '/mob2.png',
     caption: "MakeOurBook.com",
     link_href: "https://MakeOurBook.com",
-    link_text: "Visit the Make Our Book website",
+    link_text: "Make Our Book website",
     social: [
       {
       url: 'https://twitter.com/makeourbook',
@@ -64,7 +64,77 @@ const projects = [
       className: 'fa-sketch',
     }
     ]
-  }
+  },
+  {
+    key: 4,
+    title: 'Triangles',
+    author: "David Aldridge",
+    body: "We needed triangles for our new brand materials. And so we wrote a triangles generator. This is a little piece of object-oriented code to generate lots of triangles.",
+    image_url: '/triangles.png',
+    caption: "Triangles",
+    social: [
+      {
+        url: 'https://github.com/GeneralProducts/triangles',
+        className: 'fa-github-square'
+      }
+    ]
+  },
+  {
+    key: 5,
+    title: 'Object-oriented knitting',
+    author: "Emma Barnes",
+    body: "Whilst knitting a little gingerbread man, it bugged me that the pattern was just a long list of instructions. Could it be refactored to be object-oriented?",
+    image_url: '/gingerbread.png',
+    caption: "Object-oriented knitting",
+    social: [
+      {
+        url: 'https://twitter.com/has_many_books/status/1058431418961936386',
+        className: 'fa-twitter'
+      },
+      {
+        url: 'https://github.com/EmmaB/gingerbread_man',
+        className: 'fa-github-square'
+      }
+    ]
+  },
+  {
+    key: 6,
+    title: 'Choose your own presentation',
+    author: "Emma Barnes",
+    body: "A Rails app to allow the audience to choose the presentation they wanted at Byte the Book's first Confluence conference, curated by Michael Kowalski.",
+    image_url: '/cyop.png',
+    caption: "CYOP",
+    social: [
+      {
+        url: 'https://github.com/EmmaB/cyop',
+        className: 'fa-github-square'
+      },
+      {
+        url: 'https://docs.google.com/presentation/d/1A7wjz_jXANItdbszW0u0JixmsOXdqDwlMtxWi7Us0E8/edit#slide=id.p',
+        className: 'fa-google'
+      }
+    ]
+  },
+  {
+    key: 7,
+    title: 'Generalproducts.co',
+    author: "Emma Barnes",
+    body: "The website you're reading now is a React app, written on Side Project afternoons by Emma to develop her React knowledge, as well as to showcase some of our work. Built using Gatsbyjs, Arwes and Reactjs, hosted on Netlify.",
+    image_url: '/genpro.png',
+    caption: "General Products Ltd",
+    link_href: "https://en.wikipedia.org/wiki/General_Products",
+    link_text: "Read about the fictional company we're named for on Wikipedia.",
+    social: [
+      {
+        url: 'https://github.com/GeneralProducts/website',
+        className: 'fa-github-square'
+      },
+      {
+      url: 'https://twitter.com/reactjs',
+      className: 'fa-react',
+    }
+    ]
+  },
 ]
 
 export default projects

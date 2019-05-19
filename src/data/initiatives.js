@@ -77,7 +77,7 @@ const initiatives = [
   {
     key: 6,
     title: 'Supporting open source',
-    body: 'We donate to some of the open source code we rely on, such as Rubocop, via OpenCollective.',
+    body: 'We donate to some of the open source code we rely on, such as Rubocop, via OpenCollective, and contribute to code where we can, such as the Lisbn rubygem, and the official Rails documentation.',
     image_url: '/rubocop.png',
     caption: "Rubocop's Open Collective page",
     link_href: "https://opencollective.com/rubocop#contributors",
@@ -139,13 +139,22 @@ const initiatives = [
   },
   {
     key: 11,
-    title: 'Triangles',
-    body: "We needed triangles for our new brand materials. And so we wrote a triangles generator. This is a little piece of object-oriented code to generate lots of triangles.",
-    image_url: '/triangles.png',
-    caption: "Triangles",
-    link_href: "https://github.com/GeneralProducts/triangles",
-    link_text: "See the code"
+    title: 'Rebrand',
+    body: "As we mature and grow, we decided that the name 'Bibliocloud' was a bit late-nineties. So we rebranded, and learned a lot along the way.",
+    image_url: '/rebrand.png',
+    caption: "Consonance",
+    link_href: "https://www.consonance.app/blog/rebrand/",
+    link_text: "Read about our rebrand"
   },
+  {
+    key: 12,
+    title: 'Style guide',
+    body: "We maintain a style guide for our brand. As part of that, we have a brand palette, with the colours based on our clients' wonderful books",
+    image_url: '/styleguide.png',
+    caption: "Our style guide",
+    link_href: "https://www.consonance.app/style_guide/",
+    link_text: "Read the guide"
+  }
 ]
 
 export default initiatives

@@ -39,9 +39,9 @@ const SideProject = (props) => (
                 </Words>
               </p>
                 <Line animate />
-
-              <Image animate resources={props.thumb_image_url}>
-              </Image>
+                { props.thumb_image_url &&
+                <Image animate resources={props.thumb_image_url}></Image>
+              }
             </Col>
           </Row>
         </Col>
