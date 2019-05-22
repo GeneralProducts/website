@@ -4,6 +4,7 @@ html,
 body,
 .page {
   height: 100%;
+  font-family: "Electrolize", sans-serif;
 }
 
 html {
@@ -41,10 +42,9 @@ body {
   max-width: 800px;
 }
 
-
 h1, h2, p {
   color: white;
-  font-family: "Electrolize", "sans-serif";
+  font-family: "Electrolize", sans-serif;
 }
 
 h2 {
@@ -81,6 +81,7 @@ a:hover {
 .logo {
   width: 100px !important;
   filter: drop-shadow(0px 0px 20px #e8b0aa);
+  margin-bottom: 0px !important;
 }
 
 ul.nav {
@@ -107,5 +108,10 @@ ul.nav li {
     padding-right: 20px;
     list-style-type: none;
     font-size: 22px;
+  }
+
+  .header-inner {
+    justify-content: center;
+    display: flex;
   }
 }

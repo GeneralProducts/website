@@ -12,12 +12,16 @@ const projects = [
     link_text: "Paint Pad website",
     social: [
       {
-      url: 'https://twitter.com/paintpadapp',
-      className: 'fa-twitter',
+        url: 'https://twitter.com/paintpadapp',
+        className: 'fa-twitter',
       },
       {
-      url: 'https://twitter.com/reactjs',
-      className: 'fa-react',
+        url: 'https://twitter.com/reactjs',
+        className: 'fa-react',
+      },
+      {
+        url: 'https://twitter.com/rails',
+        className: 'fa-sketch',
       }
     ]
   },
@@ -56,13 +60,13 @@ const projects = [
     link_text: "Make Our Book website",
     social: [
       {
-      url: 'https://twitter.com/makeourbook',
-      className: 'fa-twitter',
+        url: 'https://twitter.com/makeourbook',
+        className: 'fa-twitter',
       },
       {
-      url: 'https://twitter.com/rails',
-      className: 'fa-sketch',
-    }
+        url: 'https://twitter.com/rails',
+        className: 'fa-sketch',
+      }
     ]
   },
   {
@@ -112,6 +116,27 @@ const projects = [
       {
         url: 'https://docs.google.com/presentation/d/1A7wjz_jXANItdbszW0u0JixmsOXdqDwlMtxWi7Us0E8/edit#slide=id.p',
         className: 'fa-google'
+      }
+    ]
+  },
+  {
+    key: 8,
+    title: 'Snowbooks',
+    author: "Emma Barnes",
+    body: "Snowbooks is our sister publishing company, founded by Emma and Rob, now in its 16th year. Snowbooks.com is a Jekyll app built using the Consonance API. Definitely buy some Snowbooks!",
+    image_url: '/snowbooks.png',
+    thumb_image_url: '/snowbooks2.png',
+    caption: "Snowbooks.com",
+    link_href: "http://snowbooks.com",
+    link_text: "Snowbooks.com",
+    social: [
+      {
+        url: 'https://github.com/EmmaB/jekyll-snow',
+        className: 'fa-github-square'
+      },
+      {
+        url: 'http://twitter.com/snowbooks',
+        className: 'fa-twitter'
       }
     ]
   },
