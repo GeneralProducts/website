@@ -85,9 +85,9 @@ const projects = [
   },
   {
     key: 5,
-    title: 'Object-oriented knitting',
+    title: 'OOK',
     author: "Emma Barnes",
-    body: "Whilst knitting a little gingerbread man, it bugged me that the pattern was just a long list of instructions. Could it be refactored to be object-oriented?",
+    body: "Object-Oriented Knitting. Whilst knitting a little gingerbread man, it bugged me that the pattern was just a long list of instructions. Could it be refactored to be object-oriented?",
     image_url: '/gingerbread.png',
     caption: "Object-oriented knitting",
     social: [
@@ -103,9 +103,9 @@ const projects = [
   },
   {
     key: 6,
-    title: 'Choose your own presentation',
+    title: 'CYOP',
     author: "Emma Barnes",
-    body: "A Rails app to allow the audience to choose the presentation they wanted at Byte the Book's first Confluence conference, curated by Michael Kowalski.",
+    body: "Choose Your Own Presentation! A Rails app to allow the audience to choose the presentation they wanted at Byte the Book's first Confluence conference, curated by Michael Kowalski.",
     image_url: '/cyop.png',
     caption: "CYOP",
     social: [
@@ -142,7 +142,7 @@ const projects = [
   },
   {
     key: 7,
-    title: 'Generalproducts.co',
+    title: 'GPLtd',
     author: "Emma Barnes",
     body: "The website you're reading now is a React app, written on Side Project afternoons by Emma to develop her React knowledge, as well as to showcase some of our work. Built using Gatsbyjs, Arwes and Reactjs, hosted on Netlify.",
     image_url: '/genpro.png',

@@ -14,7 +14,7 @@ const projectsArray = side_projects.map((project) => {
       link_href={project.link_href}
       link_text={project.link_text}
       image_url={project.image_url}
-      thumb_image_url={project.thumb_image_url} 
+      thumb_image_url={project.thumb_image_url}
       caption={project.caption}
       social={project.social}
       author={project.author}
@@ -27,7 +27,7 @@ export default () => (
   <Layout>
     <Nav />
     <div className="main-wrapper">
-    <div id="side-projects" className="wrapper">
+      <div id="side-projects" className="wrapper">
         <Appear animate>
           <p>Every Friday from noon, the General Products team work on personal projects. It's great for continuing professional development, and often our side projects are a handy sand pit to try out code approaches we use later in our production app.</p>
           <p>Here are some of the projects we've produced between us, on Fridays and on our own time. (Each of these apps belong to the author, not General Products.)</p>
