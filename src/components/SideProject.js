@@ -3,7 +3,6 @@ import { Project, Words, Image, Row, Col, Link, Line } from "arwes"
 import SocialMediaIcons from 'react-social-media-icons'
 
 const SideProject = (props) => (
-  <div style={{ padding: 20 }}>
     <Project
       animate
       header={props.title + " • " + props.author}
@@ -47,7 +46,6 @@ const SideProject = (props) => (
         </Col>
       </Row>
     </Project>
-  </div>
 )
 
 export default SideProject
