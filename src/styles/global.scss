@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Electrolize|Titillium+Web:400,400i,600,600i');
+@import url('https://fonts.googleapis.com/css?family=Nova+Flat|Electrolize|Titillium+Web:400,400i,600,600i');
 
 html,
 body,
@@ -19,6 +19,12 @@ body {
 .page {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  opacity: 1;
+  background-image: url("/line.png");
+  background-repeat: repeat;
+  background-size: 1px 4px;
+  mix-blend-mode: overlay;
 }
 
 .main-wrapper {
@@ -47,8 +53,15 @@ h1, h2, p {
   font-family: "Electrolize", sans-serif;
 }
 
+h1 {
+  font-family: "Nova Flat", sans-serif;
+  color: hsl(336, 18%, 84%);
+  opacity: .9;
+  font-weight: 500;
+}
+
 h2 {
-  color: #f3095c;
+  color: #75616b;
   font-size: 22px;
 }
 
@@ -62,8 +75,10 @@ a {
   color: #f2eff0;
   cursor: pointer;
   transition: color 250ms ease-out;
-  text-shadow: 0 0 4px rgba(172,249,251,0.65);
+  text-shadow: 0 0 30px #e3d7d2;
   text-decoration: none;
+  font-family: "Nova Flat", sans-serif;
+  font-size: 108%
 }
 
 a:hover {

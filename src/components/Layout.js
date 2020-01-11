@@ -11,7 +11,7 @@ const genproTheme = {
     header: {
       base: '#FCFAF8',
       dark: '#4A4541',
-      light: '#F5F2EF'
+      light: '#F5F2EF',
     }
   }
 }

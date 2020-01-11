@@ -1,12 +1,12 @@
 const initiatives = [
   {
     key: 1,
-    title: '2019 FutureBook Day of Code',
-    body:  "In association with The Bookseller's FutureBook conference, we are thrilled to be putting on a Day of Code, to demystify programming for the book trade. 40 delegates from bookselling and publishing will write their own website from scratch in a day, using Ruby, Jekyll, HTML and CSS.",
+    title: 'FutureBook Day of Code',
+    body:  "In association with The Bookseller's FutureBook conference, we were thrilled to deliver a Day of Code, which demystified programming for the book trade. 40 delegates from bookselling and publishing wrote their own website from scratch in a day, using Ruby, Jekyll, HTML and CSS.",
     image_url: '/doc.png',
     caption: "2019 Day of Code",
     link_href: "https://2019.dayofcode.co.uk",
-    link_text: "Day of Code 2019 website",
+    link_text: "See the results on the Day of Code website",
     social: [
       {
         url: "https://github.com/GeneralProducts/day-of-code",
@@ -16,7 +16,7 @@ const initiatives = [
   },
   {
     key: 2,
-    title: 'Side project summer 2019',
+    title: 'Side project summer',
     body:  "Carve out time for coding! To get momentum on publishers' increasing enthusiasm for code, every Friday afternoon we all convene on Twitter to compare notes on our side projects. It's fantastic to see all the things people are doing with their growing technical literacy.",
     image_url: '/sps.png',
     caption: "SideProjectSummer.com",
