@@ -54,7 +54,7 @@ const projects = [
     title: 'Make Our Book',
     body:  "Proper publishing for schools. Make Our Book is a web app used by schools to help their children become published authors.",
     image_url: '/mob2.png',
-    thumb_image_url: '/mob3.png',
+    thumb_image_url: '/mob4.gif',
     caption: "MakeOurBook.com",
     link_href: "https://MakeOurBook.com",
     link_text: "Make Our Book website",
@@ -62,6 +62,10 @@ const projects = [
       {
         url: 'https://twitter.com/makeourbook',
         className: 'fa-twitter',
+      },
+      {
+        url: 'https://twitter.com/reactjs',
+        className: 'fa-react',
       },
       {
         url: 'https://twitter.com/rails',

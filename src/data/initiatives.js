@@ -1,16 +1,20 @@
 const initiatives = [
   {
     key: 1,
-    title: 'FutureBook Day of Code',
-    body:  "In association with The Bookseller's FutureBook conference, we were thrilled to deliver a Day of Code, which demystified programming for the book trade. 40 delegates from bookselling and publishing wrote their own website from scratch in a day, using Ruby, Jekyll, HTML and CSS.",
-    image_url: '/doc.png',
-    caption: "2019 Day of Code",
-    link_href: "https://2019.dayofcode.co.uk",
-    link_text: "See the results on the Day of Code website",
+    title: '#SideProjectSummer 2020',
+    body: "Carve out time for coding! To get momentum on publishers' increasing enthusiasm for code, every Friday afternoon, May to August, we convene on Twitter to compare notes on our side projects. It's fantastic to see all the things people are doing with their growing technical literacy.",
+    image_url: '/sps20.png',
+    caption: "SideProjectSummer.com",
+    link_href: "https://twitter.com/search?q=%23SideProjectSummer&src=recent_search_click&f=live",
+    link_text: "#SideProjectSummer hashtag",
     social: [
       {
-        url: "https://github.com/GeneralProducts/day-of-code",
+        url: "https://github.com/GeneralProducts/side-project-summer",
         className: 'fa-github-square',
+      },
+      {
+        url: 'https://twitter.com/sideprosummer',
+        className: 'fa-twitter',
       }
     ]
   },
@@ -31,20 +35,16 @@ const initiatives = [
   },
   {
     key: 3,
-    title: '#SideProjectSummer',
-    body:  "Carve out time for coding! To get momentum on publishers' increasing enthusiasm for code, every Friday afternoon we all convene on Twitter to compare notes on our side projects. It's fantastic to see all the things people are doing with their growing technical literacy.",
-    image_url: '/sps.png',
-    caption: "SideProjectSummer.com",
-    link_href: "https://twitter.com/search?q=%23SideProjectSummer&src=recent_search_click&f=live",
-    link_text: "#SideProjectSummer hashtag",
+    title: 'FutureBook Day of Code',
+    body: "In association with The Bookseller's FutureBook conference, we were thrilled to deliver a Day of Code, which demystified programming for the book trade. 40 delegates from bookselling and publishing wrote their own website from scratch in a day, using Ruby, Jekyll, HTML and CSS.",
+    image_url: '/doc.png',
+    caption: "2019 Day of Code",
+    link_href: "https://2019.dayofcode.co.uk",
+    link_text: "See the results on the Day of Code website",
     social: [
       {
-        url: "https://github.com/EmmaB/sideprojectsummer",
+        url: "https://github.com/GeneralProducts/day-of-code",
         className: 'fa-github-square',
-      },
-      {
-      url: 'https://twitter.com/sideprosummer',
-      className: 'fa-twitter',
       }
     ]
   },
